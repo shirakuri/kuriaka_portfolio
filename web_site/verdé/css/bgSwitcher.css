@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.bgimg-slider {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /*overflow-y: scroll;*/
+}
+
+
+
