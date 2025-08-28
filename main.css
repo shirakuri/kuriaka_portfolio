@@ -78,10 +78,10 @@ p, li {
   font-family: 'Noto Serif JP', 'Playfair Display', serif;
 }
 
-a{color: #777;}
-
+a:link{color: #777;}
 a:hover { opacity: 0.5; }
 a:visited{ color: #777;}
+a:active{ color: #777;}
 /* ======== レイアウト全体 ======== */
 .layout {
   display: flex;
