@@ -276,7 +276,22 @@ section {
 }
 
 
+@media (max-width: 1000px) {
+  .works-grid1,
+  .works-grid2 {
+    grid-template-columns: 1fr; /* 1列 */
+  }
 
+  .works-grid3 {
+    grid-template-columns: 1fr; /* 1列 */
+    grid-template-areas: none;  /* 特殊レイアウト解除 */
+  }
+
+  .works-grid3 .rect,
+  .works-grid3 .landscape {
+    grid-area: auto !important;
+  }
+}
 
 /* ======== Websites ======== */
 .websites {
@@ -330,4 +345,22 @@ footer {
   cursor: pointer;
   z-index: 1001;
   color: #262626;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  nav {
+    left: -220px;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  .main-area {
+    margin-left: 0;
+  }
 }
