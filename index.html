@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- ハンバーガー -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- レイアウト全体 -->
+  <div class="layout">
+
+    <!-- 左ナビ -->
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#graphics">GRAPHICS</a></li>
+        <li><a href="#websites">WEBSITES</a></li>
+      </ul>
+    </nav>
+
+    <!-- 右カラム（ヘッダー＋メイン） -->
+    <div class="main-area">
+      <!-- ヘッダー -->
+      <header>
+        
+        <h1><img src="img/logo.png"></h1>
+      </header>
+
+      <!-- メイン -->
+      <main>
+        <!-- PROFILE -->
+		<section id="profile">
+		  <h2>PROFILE</h2>
+			<div class="profile_txt">
+			  <p>
+				NHK関連会社にてWEBデザイナーとして約3年間勤務後、出産・育児を経て、現在は生活雑貨メーカーにてWEB制作・デザイン業務に携わり8年目になります。WEBページやLP、SNS投稿、カタログなど幅広いデザイン経験を積んできました。
+			  </p>
+			  <p>
+				これまで培った「シンプルでわかりやすく伝わるデザイン」を活かし、Canvaを通じて誰もが使いやすく、日常やビジネスで活用できるテンプレートを提供したいと考えています。
+			  </p>
+			  <p>
+				I would like to create Canva templates that are not only simple and clear, but also practical and enjoyable for people around the world.
+			  </p>
+			</div>
+
+		    <div class="profile_info_photo">
+			  <div class="profile_info">
+				<h3>Hobbies &amp; Skills</h3>
+				<ul>
+				  <li>Handmade accessory crafting</li>
+				  <li>Visiting power spots</li>
+				</ul>
+
+				<h3>Favorite Design Styles</h3>
+				<ul>
+				  <li>Bold and eye-catching designs</li>
+				  <li>Colorful designs</li>
+				</ul>
+
+				<h3>Strengths / Specialties</h3>
+				<ul>
+				  <li>Social media posts</li>
+				  <li>Banners</li>
+				  <li>Catalogs</li>
+				  <li>POP materials</li>
+				</ul>
+			  </div>
+
+			  <div class="profile_photo">
+				<img src="img/ak.png" alt="プロフィール写真">
+			  </div>
+			</div>
+
+		</section>
+
+        <!-- GRAPHICS -->
+        <section id="graphics">
+          <h2>GRAPHICS</h2>
+          <p class="section-desc">Flyers, Banners, Social media posts, etc.</p>
+
+          <h3>FLYERS</h3>
+          <div class="works-grid1">
+            <img src="img/flyer01.jpg" alt="">
+            <img src="img/flyer02.jpg" alt="">
+            <img src="img/flyer03.jpg" alt="">
+            <img src="img/flyer04.jpg" alt="">
+            <img src="img/flyer05.jpg" alt="">
+            <img src="img/flyer06.jpg" alt="">
+          </div>
+
+          <h3>BANNERS</h3>
+          <div class="works-grid2">
+            <img src="img/banner01.jpg" class="square" alt="">
+            <img src="img/banner02.jpg" class="square" alt="">
+            <img src="img/banner03.jpg" class="square" alt="">
+            <img src="img/banner06.jpg" class="square" alt="">
+            <img src="img/banner05.jpg" class="square" alt="">
+            <img src="img/banner04.jpg" class="square" alt="">
+          </div>
+
+          <div class="works-grid3">
+            <img src="img/banner07.jpg" class="rect" alt="バナー縦長1">
+            <img src="img/banner08.jpg" class="rect" alt="バナー縦長2">
+            <img src="img/banner09.png" class="landscape" alt="バナー横長1">
+            <img src="img/banner10.jpg" class="landscape" alt="バナー横長2">
+          </div>
+
+          <h3>SOCIAL MEDIA POSTS</h3>
+          <div class="works-grid1">
+            <img src="img/sns01.jpg" class="square" alt="">
+            <img src="img/sns02.jpg" class="square" alt="">
+            <img src="img/sns03.jpg" class="square" alt="">
+          </div>
+        </section>
+
+        <!-- WEBSITES -->
+        <section id="websites">
+          <h2>WEBSITES</h2>
+          
+          <p class="section-desc">Responsive Web Design for PC & Mobile</p>
+          
+          <div class="websites">
+            <div>
+              <h3>Demo: Houseplant Shop</h3>
+              
+              <div class="screens">
+                <!-- PC表示 -->
+                 <h4><img src="img/3media.png">Optimized for all devices</h4>
+                 <iframe src="web_site/verdé/index.html" class="pc"></iframe>
+                
+              </div>
+            </div>
+
+            <div>
+              <h3>Demo: Houseplant Shop</h3>
+              
+              <div class="screens">
+                <!-- PC表示 -->
+                 <h4><img src="img/3media.png">Optimized for all devices</h4>
+                 <iframe src="web_site/sen/index.html" class="pc"></iframe>
+                
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        © 2025 Akane Kurita — All Rights Reserved.
+      </footer>
+    </div> 
+
+  </div> <!-- layout end -->
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll("#navMenu a");
+      const navMenu = document.getElementById("navMenu");
+      links.forEach(link => {
+        link.addEventListener("click", () => navMenu.classList.remove("active"));
+      });
+    });
+  </script>
+</body>
+</html>
